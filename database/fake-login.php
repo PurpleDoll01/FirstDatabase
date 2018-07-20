@@ -6,10 +6,14 @@ $query = null;
 if (!empty($_POST)) {
     require_once 'config.php';
 
-    $query = "SELECT * FROM users WHERE email = '" . $_POST['email'] . "' AND password = '" . md5($_POST['password']) . "'";
-    $queryResult = $pdo->query($query);
+    $query = "SELECT * FROM users WHERE email = :email AND password = :password";
+    $prepared = $pdo->prepare($query);
+    $prepared->execute([
+        'email' => $_POST['email'],
+        'password' => md5($_POST['password'])
+    ]);
 
-    $user = $queryResult->fetch(PDO::FETCH_ASSOC);
+    $user = $prepared->fetch(PDO::FETCH_ASSOC);
 }
 
 

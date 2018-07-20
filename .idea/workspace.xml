@@ -50,8 +50,8 @@
       <file leaf-file-name="fake-login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/fake-login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-48">
-              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            <state relative-caret-position="144">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -205,12 +205,12 @@
       <workItem from="1531704640652" duration="4515000" />
       <workItem from="1531778090788" duration="13982000" />
       <workItem from="1531948783897" duration="12139000" />
-      <workItem from="1532032779607" duration="6129000" />
+      <workItem from="1532032779607" duration="6413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98546000" />
+    <option name="totallyTimeSpent" value="98830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,8 +620,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/fake-login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        <state relative-caret-position="144">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
