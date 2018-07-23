@@ -1,5 +1,5 @@
 <?php
-include_once 'config.php';
+include_once '../config.php';
 $query = $pdo->prepare('SELECT * FROM blog_posts ORDER BY id DESC');
 $query->execute();
 
@@ -20,21 +20,24 @@ $blogPosts = $query->fetchAll(PDO::FETCH_ASSOC);
     </div>
     <div class="row">
         <div class="col-md-8">
-            <?php
-            foreach ($blogPosts as $blogPost) {
-                echo '<div class="blog-post">';
-                echo '<h2>' . $blogPost['title'] . '</h2>';
-                echo '<p>Jan 1, 2020 by <a href="">Mariana</a> </p>';
-                echo '<div class="blog-post-image">';
-                echo '<img src="images/keyboard.jpg" alt="">';
-                echo '</div>';
-                echo '<div class="blog-post-content">';
-                echo $blogPost['content'];
-                echo '</div>';
-                echo '</div>';
-            }
-            ?>
-
+            <h2>Posts</h2>
+            <a class="btn btn-primary" href="insert-post.php">New Post</a>
+            <table class="table">
+                <tr>
+                    <th>Title</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                <?php
+                foreach ($blogPosts as $blogPost) {
+                    echo '<tr>';
+                    echo '<td>' . $blogPost['title'] . '</td>';
+                    echo '<td>Edit</td>';
+                    echo '<td>Delete</td>';
+                    echo '</tr>';
+                }
+                ?>
+            </table>
         </div>
         <div class="col-md-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac augue suscipit, viverra purus aliquam, convallis justo. Phasellus condimentum justo sed erat ultrices tincidunt. Duis vulputate, mi eget gravida tincidunt, sem diam mattis dolor, eu pharetra eros mi eget ligula. Nunc sed leo vel tellus eleifend dapibus a id est. Cras nulla massa, blandit quis tempor vel, mollis nec dui. Ut eu nulla accumsan, euismod purus eget, vulputate mauris. Nam porttitor, libero a ultricies pellentesque, urna sem tristique neque, quis euismod est ligula in est. Maecenas et feugiat nibh, non congue turpis. Vestibulum eu nulla eget dolor fermentum tempor at et eros. Duis volutpat feugiat venenatis.
