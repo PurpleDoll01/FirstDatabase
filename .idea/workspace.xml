@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f99fa5f-3e02-4bc4-be13-521d6cb56806" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,13 +89,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="173">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>blog</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -171,7 +170,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="10" />
     <option name="y" value="14" />
     <option name="width" value="795" />
@@ -275,12 +274,12 @@
       <workItem from="1531948783897" duration="12139000" />
       <workItem from="1532032779607" duration="11266000" />
       <workItem from="1532132024096" duration="571000" />
-      <workItem from="1532376890435" duration="12955000" />
+      <workItem from="1532376890435" duration="15683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117209000" />
+    <option name="totallyTimeSpent" value="119937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -682,8 +681,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="173">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
