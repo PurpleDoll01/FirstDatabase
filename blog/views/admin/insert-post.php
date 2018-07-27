@@ -1,3 +1,4 @@
+
 <html>
 <head>
     <title>Blog with Platzi</title>
@@ -12,11 +13,24 @@
     </div>
     <div class="row">
         <div class="col-md-8">
-            <ul>
-                <li>
-                    <a href="posts.php">Manage Posts</a>
-                </li>
-            </ul>
+            <h2>New Post</h2>
+            <p>
+                <a class="btn btn-default" href="<?php echo BASE_URL; ?>admin/posts">Back</a>
+            </p>
+            <?php
+                if(isset($result) && $result) {
+                   echo '<div class="alert alert-success">Post Saved!</div>';
+                }
+            ?>
+            <form method="post">
+                <div class="form-group">
+                    <label for="inputTitle">Title</label>
+                    <input type="text" class="form-control" name="title" id="inputTitle">
+                </div>
+                <textarea class="form-control" name="content" id="inputContent" rows="5"></textarea>
+                <br>
+                <input class="btn btn-primary" type="submit" value="Save">
+            </form>
         </div>
         <div class="col-md-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac augue suscipit, viverra purus aliquam, convallis justo. Phasellus condimentum justo sed erat ultrices tincidunt. Duis vulputate, mi eget gravida tincidunt, sem diam mattis dolor, eu pharetra eros mi eget ligula. Nunc sed leo vel tellus eleifend dapibus a id est. Cras nulla massa, blandit quis tempor vel, mollis nec dui. Ut eu nulla accumsan, euismod purus eget, vulputate mauris. Nam porttitor, libero a ultricies pellentesque, urna sem tristique neque, quis euismod est ligula in est. Maecenas et feugiat nibh, non congue turpis. Vestibulum eu nulla eget dolor fermentum tempor at et eros. Duis volutpat feugiat venenatis.
@@ -26,7 +40,7 @@
         <div class="col-md-12">
             <footer>
                 This is a footer<br>
-                <a href="admin/index.php">Admin Panel</a>
+                <a href="<?php echo BASE_URL; ?>admin">Admin Panel</a>
             </footer>
         </div>
     </div>
