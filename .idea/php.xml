@@ -4,6 +4,9 @@
     <include_path>
       <path value="$PROJECT_DIR$/blog/vendor/phroute/phroute" />
       <path value="$PROJECT_DIR$/blog/vendor/composer" />
+      <path value="$PROJECT_DIR$/blog/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/blog/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/blog/vendor/symfony/polyfill-mbstring" />
     </include_path>
   </component>
 </project>

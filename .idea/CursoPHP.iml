@@ -5,6 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/blog/app" isTestSource="false" packagePrefix="App\" />
       <excludeFolder url="file://$MODULE_DIR$/blog/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/blog/vendor/phroute/phroute" />
+      <excludeFolder url="file://$MODULE_DIR$/blog/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/blog/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/blog/vendor/twig/twig" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
