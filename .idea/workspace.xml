@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f99fa5f-3e02-4bc4-be13-521d6cb56806" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/blog/views/layout.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/controllers/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/controllers/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/controllers/indexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/controllers/indexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/index.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/controllers/admin/indexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/controllers/admin/indexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/controllers/admin/postController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/controllers/admin/postController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/admin/index.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views/admin/insert-post.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/admin/insert-post.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views/admin/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/admin/posts.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/index.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +26,8 @@
       <file leaf-file-name="indexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/app/controllers/admin/indexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+            <state relative-caret-position="144">
+              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -32,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/blog/app/controllers/admin/postController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -46,20 +50,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/composer.json">
+      <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/app/controllers/BaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="400">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog/app/controllers/BaseController.php">
+      <file leaf-file-name="layout.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/views/layout.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="224">
+              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/views/admin/posts.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insert-post.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/views/admin/insert-post.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -76,8 +98,17 @@
       <file leaf-file-name="index.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/views/index.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="61" />
+            <state relative-caret-position="256">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/views/admin/index.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="16" lean-forward="true" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -98,10 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/operators/logical.php" />
-        <option value="$PROJECT_DIR$/operators/null.php" />
-        <option value="$PROJECT_DIR$/functions/index.php" />
-        <option value="$PROJECT_DIR$/conditionals/index.php" />
         <option value="$PROJECT_DIR$/loops/index.php" />
         <option value="$PROJECT_DIR$/external/index.php" />
         <option value="$PROJECT_DIR$/external/functions.php" />
@@ -143,12 +170,16 @@
         <option value="$PROJECT_DIR$/blog/views/index.php" />
         <option value="$PROJECT_DIR$/blog/views/admin/index.php" />
         <option value="$PROJECT_DIR$/blog/composer.json" />
-        <option value="$PROJECT_DIR$/blog/app/controllers/admin/indexController.php" />
-        <option value="$PROJECT_DIR$/blog/app/controllers/admin/postController.php" />
         <option value="$PROJECT_DIR$/blog/public/index.php" />
         <option value="$PROJECT_DIR$/blog/app/controllers/indexController.php" />
         <option value="$PROJECT_DIR$/blog/app/controllers/BaseController.php" />
+        <option value="$PROJECT_DIR$/blog/views/layout.twig" />
         <option value="$PROJECT_DIR$/blog/views/index.twig" />
+        <option value="$PROJECT_DIR$/blog/views/admin/index.twig" />
+        <option value="$PROJECT_DIR$/blog/app/controllers/admin/indexController.php" />
+        <option value="$PROJECT_DIR$/blog/app/controllers/admin/postController.php" />
+        <option value="$PROJECT_DIR$/blog/views/admin/posts.twig" />
+        <option value="$PROJECT_DIR$/blog/views/admin/insert-post.twig" />
       </list>
     </option>
   </component>
@@ -213,6 +244,14 @@
               <item name="CursoPHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="CursoPHP" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CursoPHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CursoPHP" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -220,6 +259,13 @@
               <item name="CursoPHP" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CursoPHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CursoPHP" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,12 +327,12 @@
       <workItem from="1532376890435" duration="17527000" />
       <workItem from="1532465382955" duration="7154000" />
       <workItem from="1532642479469" duration="13503000" />
-      <workItem from="1532885772105" duration="7208000" />
+      <workItem from="1532885772105" duration="11211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149646000" />
+    <option name="totallyTimeSpent" value="153649000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -356,13 +402,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/operators/null.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -564,20 +603,6 @@
     <entry file="file://$PROJECT_DIR$/blog/composer.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views/admin/posts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views/admin/insert-post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -629,38 +654,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/app/controllers/admin/indexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/app/controllers/admin/postController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/app/controllers/indexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -673,15 +670,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/views/index.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="61" />
+        <state relative-caret-position="256">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/app/controllers/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="400">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/app/controllers/indexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/app/controllers/admin/indexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/app/controllers/admin/postController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/layout.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/admin/posts.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/admin/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="16" lean-forward="true" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/admin/insert-post.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
