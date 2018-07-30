@@ -3,21 +3,31 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-include_once '../config.php';
 require_once '../vendor/autoload.php'; // Con hacer esto ya podemos usar phroute en todos los archivos
 
 $baseDir = str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
 $baseUrl = 'http://' . $_SERVER['HTTP_HOST'] . $baseDir;
 define('BASE_URL', $baseUrl); // Aca estamos definiendo una constante
 
-$route = $_GET['route'] ?? '/';
+use Illuminate\Database\Capsule\Manager as Capsule;
 
-function render($fileName, $params = []) {
-    ob_start();
-    extract($params);
-    include $fileName;
-    return ob_get_clean();
-}
+$capsule = new Capsule;
+
+$capsule->addConnection([
+    'driver'    => 'mysql',
+    'host'      => 'localhost',
+    'database'  => 'cursophp',
+    'username'  => 'root',
+    'password'  => '',
+    'charset'   => 'utf8',
+    'collation' => 'utf8_unicode_ci',
+    'prefix'    => '',
+]);
+
+$capsule->setAsGlobal();
+$capsule->bootEloquent();
+
+$route = $_GET['route'] ?? '/';
 
 use Phroute\Phroute\RouteCollector;
 
