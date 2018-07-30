@@ -16,6 +16,7 @@
       <path value="$PROJECT_DIR$/blog/vendor/illuminate/database" />
       <path value="$PROJECT_DIR$/blog/vendor/illuminate/contracts" />
       <path value="$PROJECT_DIR$/blog/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/blog/vendor/vlucas/phpdotenv" />
     </include_path>
   </component>
 </project>
