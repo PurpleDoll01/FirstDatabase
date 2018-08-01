@@ -28,7 +28,7 @@ class PostController extends BaseController {
         $validator->add('content', 'required');
 
         if ($validator->validate($_POST)) {
-            $blogPost = new blogPost([
+            $blogPost = new BlogPost([
                 'title' => $_POST['title'],
                 'content' => $_POST['content']
             ]);
@@ -36,9 +36,6 @@ class PostController extends BaseController {
             $result = true;
         } else {
             //$errors = $validator->getMessages();
-            $validator->clearMessages();
-            $errors1 = $validator->addMessage('Title', 'This field is required');
-            $errors2 = $validator->addMessage('Content', 'This field is required');
             $errors = $validator->getMessages();
             //Aqui modificamos codifo del curso para poder mostrar title y content con cap
         }
