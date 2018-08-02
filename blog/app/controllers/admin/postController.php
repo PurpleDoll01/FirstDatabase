@@ -5,6 +5,7 @@ namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use App\Models\BlogPost;
 use Sirius\Validation\Validator;
+use App\Log;
 
 class PostController extends BaseController {
 
@@ -41,6 +42,7 @@ class PostController extends BaseController {
         } else {
             //$errors = $validator->getMessages();
             $errors = $validator->getMessages();
+            Log::logError('Error creating post: ' . serialize($errors));
             //Aqui modificamos codifo del curso para poder mostrar title y content con cap
         }
 
