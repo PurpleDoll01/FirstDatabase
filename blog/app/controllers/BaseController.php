@@ -9,7 +9,7 @@ class BaseController {
     protected $templateEngine;
 
     public function __construct() {
-        $loader = new Twig_Loader_Filesystem('../views');
+        $loader = new Twig_Loader_Filesystem('../views'); //aqui estamos poniendo el path de las vistas como si estuvieramos parados en el index de public que es el que envía al controlador
         $this->templateEngine = new \Twig_Environment($loader, [
             'debug' => true,
             'cache' => false

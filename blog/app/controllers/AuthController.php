@@ -28,7 +28,7 @@ class AuthController extends BaseController {
                 }
             }
 
-            $validator->addMessage('email', 'Username and/or password are invalid');
+            $validator->addMessage('Error','Username and/or password are invalid');
         }
 
         $errors = $validator->getMessages();

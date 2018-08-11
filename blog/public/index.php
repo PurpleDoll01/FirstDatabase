@@ -1,4 +1,14 @@
 <?php
+
+/*Se comienza haciendo todo sin librerías, luego se aplica el router
+y composer, htaccess para que las url sean mas bonitas, luego se aplica twig que tiene que ver con el render del
+router. Se agrega filtro para las url desde base controller para poder poner src y linkear
+Hacemos un layout con todo el código que se repite. Los modelos los hacemos con Eloquent, bases de datos
+Modelo es la interacción con la base de datos. Configuramos el env para las variables de entorno,
+Validamos desde el backend con sirius, esto se hace en los post. Recordar que los errores se muestran desde el validador
+y se pueden añadir más
+*/
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -44,7 +54,6 @@ $router->filter('auth', function () {
     }
 });
 
-$router->controller('/auth', App\Controllers\AuthController::class);
 
 $router->group(['before' => 'auth'], function ($router) {
 
@@ -53,6 +62,7 @@ $router->group(['before' => 'auth'], function ($router) {
     $router->controller('/admin/users', App\Controllers\Admin\userController::class);
 });
 $router->controller('/', App\Controllers\IndexController::class);
+$router->controller('/auth', App\Controllers\AuthController::class);
 
 $dispatcher = new Phroute\Phroute\Dispatcher($router->getData());
 $response = $dispatcher->dispatch($_SERVER['REQUEST_METHOD'], $route);

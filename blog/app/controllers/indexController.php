@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\BlogPost;
+use App\Models\User;
 
 class IndexController extends BaseController {
 
@@ -16,15 +17,17 @@ class IndexController extends BaseController {
 
         $blogPosts = BlogPost::query()->orderBy('id','desc')->skip($skip)->take($limit)->get();
 
+
         return $this->render('index.twig', [
         'blogPosts' => $blogPosts,
         'totalPages' => $totalPages,
-        'page' => $page
+        'page' => $page,
         ]);
+
     }
 
-    public function getDetail($title) {
-        $blogPosts = BlogPost::where('title', $title)->get();
+    public function getDetail($id) {
+        $blogPosts = BlogPost::where('id', $id)->get();
         return $this->render('admin/detail.twig', ['blogPosts' => $blogPosts]);
     }
 }

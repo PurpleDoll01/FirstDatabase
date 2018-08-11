@@ -20,6 +20,7 @@
       <path value="$PROJECT_DIR$/blog/vendor/siriusphp/validation" />
       <path value="$PROJECT_DIR$/blog/vendor/psr/log" />
       <path value="$PROJECT_DIR$/blog/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/blog/vendor/sebastian/object-enumerator" />
     </include_path>
   </component>
 </project>

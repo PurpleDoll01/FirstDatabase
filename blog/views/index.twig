@@ -4,9 +4,9 @@
     {% for blogPost in blogPosts %}
         <div class="blog-post">
             <p>
-            <h2><a href="{{ 'detail/' | url }}{{ blogPost.title }}">{{ blogPost.title }}</a></h2>
+            <h2><a href="{{ 'detail/' | url }}{{ blogPost.id }}">{{ blogPost.title }}</a></h2>
             </p>
-            <p>Jan 1, 2020 by <a href="">Mariana</a></p>
+                    <p>{{ blogPost.created_at }} <a href="">{{ blogPost.name }}</a></p>
             {% if blogPost.img_url %}
                 <div class="blog-post-image">
                     <img src="{{ blogPost.img_url }}" alt="">

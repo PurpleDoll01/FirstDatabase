@@ -4,6 +4,7 @@ namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
 use App\Models\BlogPost;
+use App\Models\User;
 use Sirius\Validation\Validator;
 use App\Log;
 
@@ -28,10 +29,14 @@ class PostController extends BaseController {
         $validator->add('title', 'required');
         $validator->add('content', 'required');
 
+        $userID = $_SESSION['userID'];
+        $users = User::where('id', $userID)->first();
+
         if ($validator->validate($_POST)) {
             $blogPost = new BlogPost([
                 'title' => $_POST['title'],
-                'content' => $_POST['content']
+                'content' => $_POST['content'],
+                'name' => $users['name']
             ]);
             if ($_POST['img_url']) {
                $blogPost->img_url = $_POST['img_url'];
@@ -39,6 +44,7 @@ class PostController extends BaseController {
 
             $blogPost->save();
             $result = true;
+            header("refresh: 2;" . BASE_URL . 'admin/posts');
         } else {
             //$errors = $validator->getMessages();
             $errors = $validator->getMessages();
@@ -94,7 +100,7 @@ class PostController extends BaseController {
 
     public function getDelete($id){
         $blogPosts = BlogPost::where('id', $id)->delete();
-        return $this->render('admin/delete-post.twig', ['blogPosts'=> $blogPosts]);
+        header('Location:' . BASE_URL . 'admin/posts');
     }
 }
 

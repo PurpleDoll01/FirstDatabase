@@ -37,6 +37,7 @@ class userController extends BaseController {
 
             $user->save();
             $result = true;
+            header("refresh: 2;" . BASE_URL . 'admin/users');
 
         } else {
             $errors = $validator->getMessages();
